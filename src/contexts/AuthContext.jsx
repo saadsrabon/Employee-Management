@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://employee-management-backend-pi.vercel.app';
 
 const AuthContext = createContext();
 
@@ -44,7 +44,7 @@ export const AuthProvider = ({ children }) => {
   const register = async (data) => {
     setLoading(true);
     try {
-      const res = await fetch('/register', {
+      const res = await fetch('https://employee-management-backend-pi.vercel.app/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -67,7 +67,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/login', {
+      const res = await fetch('https://employee-management-backend-pi.vercel.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
