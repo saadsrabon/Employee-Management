@@ -13,9 +13,9 @@ import ContactUs from './pages/ContactUs';
 import ProtectedRoute from './components/ProtectedRoute';
 import WorkSheet from './pages/employee/WorkSheet';
 import PaymentHistory from './pages/employee/PaymentHistory';
-import EmployeeList from './pages/HR/EmployeeList';
-import EmployeeDetails from './pages/HR/EmployeeDetails';
-import Progress from './pages/HR/Progress';
+import EmployeeList from './pages/hr/EmployeeList';
+import EmployeeDetails from './pages/hr/EmployeeDetails';
+import Progress from './pages/hr/Progress';
 import AllEmployeeList from './pages/admin/AllEmployeeList';
 import Payroll from './pages/admin/Payroll';
 
